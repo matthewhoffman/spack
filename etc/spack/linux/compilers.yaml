@@ -1,0 +1,14 @@
+compilers:
+- compiler:
+    environment: {}
+    extra_rpaths: []
+    flags: {}
+    modules: []
+    operating_system: rhel6
+    paths:
+      cc: /turquoise/usr/projects/hpcsoft/toss2/common/gcc/6.4.0/bin/gcc
+      cxx: /turquoise/usr/projects/hpcsoft/toss2/common/gcc/6.4.0/bin/g++
+      f77: /turquoise/usr/projects/hpcsoft/toss2/common/gcc/6.4.0/bin/gfortran
+      fc: /turquoise/usr/projects/hpcsoft/toss2/common/gcc/6.4.0/bin/gfortran
+    spec: gcc@6.4.0
+    target: x86_64

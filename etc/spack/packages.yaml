@@ -1,0 +1,11 @@
+packages:
+       open-ssl:
+           paths:
+                   open-ssl@1.0.1e-fips: /usr
+           buildable: False 
+       cmake:
+         version: [3.10.2]
+         paths:
+            cmake@3.10.2: /usr/projects/hpcsoft/toss2/common/cmake/3.10.2
+         buildable: False        
+
