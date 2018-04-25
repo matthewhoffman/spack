@@ -1,11 +1,27 @@
 packages:
-       open-ssl:
-           paths:
-                   open-ssl@1.0.1e-fips: /usr
-           buildable: False 
        cmake:
          version: [3.10.2]
          paths:
             cmake@3.10.2: /usr/projects/hpcsoft/toss2/common/cmake/3.10.2
-         buildable: False        
+         buildable: False       
+       openmpi:
+          version: [2.1.2]
+          paths:
+            openmpi@2.1.2%gcc@6.4.0 arch=linux-rhel7-x86_64: /usr/projects/hpcsoft/toss2/wolf/openmpi/2.1.2-gcc-6.4.0
+          buildable: False 
+       m4:
+          version: [1.4.13]
+          paths:
+             m4@1.4.13 arch=linux-rhel7-x86_64: /usr
+
+       numactl:
+          paths:
+             numactl: /usr
+       all:
+          compiler: [gcc@6.4.0]
+          providers:
+            mpi: [openmpi@2.1.2]
+            blas: [mkl@11.4.1]
+            lapack: [mkl@11.4.1]
+            m4: [m4@1.4.13]
 
